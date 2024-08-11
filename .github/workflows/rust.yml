@@ -7,9 +7,10 @@ on:
       - "develop"
     tags:
       - "*"
-  schedule:
-    - cron: "40 4 * * *" # every day at 4:40
+  # schedule:
+  #   - cron: "40 4 * * *" # every day at 4:40
   pull_request:
+  workflow_dispatch:
 
 jobs:
   test:
